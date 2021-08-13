@@ -286,11 +286,11 @@
             if (whosStart === 1) {
                 whosStart = 0;
                 whosPlay = whosStart;
-                document.querySelector('.whos-start').innerHTML = 'Quem começa: Jogador';
+                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jogador';
             } else {
                 whosStart = 1;
                 whosPlay = whosStart;
-                document.querySelector('.whos-start').innerHTML = 'Quem começa: CPU';
+                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CPU';
                 cpuPlay();
             }
         }
