@@ -13,6 +13,12 @@
 button {
     font-size: 1.8rem;
     margin: 3rem;
+    width: 11rem;
+    height: 3.4rem;
+}
+
+.button-b {
+    margin-left: -2rem;
 }
 
 footer p {

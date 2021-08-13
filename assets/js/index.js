@@ -9,6 +9,14 @@
         let whosStart = 1;
         let move = 0;
 
+        function easy() {
+            level = 1;
+        }
+
+        function hard() {
+            level = 2;
+        }
+ 
         function cpuPlay() {
             if (playing) {
                 let l, c;
@@ -261,6 +269,8 @@
         }
 
         function start() {
+            easy();
+            hard();
             playing = true;
             moveCpu = 1;
             move = 0;
