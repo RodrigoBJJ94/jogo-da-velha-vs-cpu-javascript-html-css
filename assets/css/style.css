@@ -96,8 +96,8 @@ footer p {
 }
 @media (max-width: 800px) {
     .position-game {
-        width: 10rem;
-        height: 10rem;
+        width: 9rem;
+        height: 9rem;
         margin: 0;
         padding: 0;
         cursor: pointer;
@@ -108,13 +108,13 @@ footer p {
     }
 
     .div-game {
-        width: 32rem;
-        height: 32rem;
+        width: 28.8rem;
+        height: 28.8rem;
         margin-left: 5rem;
         margin-top: 7rem;
     }
 
     footer p {
-        margint
+        margin-top: 14rem;
     }
 }
