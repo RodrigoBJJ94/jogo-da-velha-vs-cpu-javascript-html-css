@@ -20,17 +20,29 @@ button {
     border-radius: 0.5rem;
 }
 
+button:hover {
+    background-color: rgba(146, 187, 233, 0.3);
+}
+
 .button-b {
     margin-left: -2rem;
-    background: rgb(224, 224, 49);
+    background: rgb(255, 255, 34);
     border: none;
     border-radius: 0.5rem;
+}
+
+.button-b:hover {
+    background: rgba(255, 255, 34, 0.3);
 }
 
 .b2 {
     background: rgb(214, 142, 8);
     border: none;
     border-radius: 0.5rem;
+}
+
+.b2:hover {
+    background: rgba(214, 142, 8, 0.3);
 }
 
 footer p {
