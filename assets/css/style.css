@@ -123,4 +123,15 @@ footer p {
     footer p {
         margin-top: 14rem;
     }
+
+    .button-b {
+        margin-left: -2.5rem;
+    }
+
+    button {
+        font-size: 1.6rem;
+        margin: 3rem;
+        width: 9.5rem;
+        height: 3.4rem;
+    }
 }
