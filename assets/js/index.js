@@ -9,14 +9,6 @@
         let whosStart = 1;
         let move = 0;
 
-        function easy() {
-            level = 1;
-        }
-
-        function hard() {
-            level = 2;
-        }
- 
         function cpuPlay() {
             if (playing) {
                 let l, c;
@@ -269,8 +261,7 @@
         }
 
         function start() {
-            easy();
-            hard();
+            level = 2;
             playing = true;
             moveCpu = 1;
             move = 0;
@@ -286,11 +277,37 @@
             if (whosStart === 1) {
                 whosStart = 0;
                 whosPlay = whosStart;
-                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jogador';
+                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jogador';
             } else {
                 whosStart = 1;
                 whosPlay = whosStart;
-                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CPU';
+                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CPU';
+                cpuPlay();
+            }
+        }
+
+        function easy() {
+            level = 1;
+            playing = true;
+            moveCpu = 1;
+            move = 0;
+            game = [['', '', ''], ['', '', ''], ['', '', '']];
+            board = [
+                [document.querySelector('#p1'), document.querySelector('#p2'), document.querySelector('#p3')],
+                [document.querySelector('#p4'), document.querySelector('#p5'), document.querySelector('#p6')],
+                [document.querySelector('#p7'), document.querySelector('#p8'), document.querySelector('#p9')]
+            ];
+
+            updateBoard();
+
+            if (whosStart === 1) {
+                whosStart = 0;
+                whosPlay = whosStart;
+                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jogador';
+            } else {
+                whosStart = 1;
+                whosPlay = whosStart;
+                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CPU';
                 cpuPlay();
             }
         }

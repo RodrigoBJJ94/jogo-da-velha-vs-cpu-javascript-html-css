@@ -10,39 +10,33 @@
     margin: 3rem;
 }
 
-button {
-    font-size: 1.8rem;
+.hard {
+    font-size: 2rem;
+    font-weight: 400;
     margin: 3rem;
     width: 11rem;
     height: 3.4rem;
     border: none;
-    background-color: rgb(146, 187, 233);
+    background: rgb(224, 83, 48);
     border-radius: 0.5rem;
+    color: white;
 }
 
-button:hover {
-    background-color: rgba(146, 187, 233, 0.3);
+.hard:hover {
+    background-color: rgba(224, 83, 48, 0.8);
 }
 
-.button-b {
-    margin-left: -2rem;
-    background: rgb(255, 255, 34);
+.easy {
+    font-size: 2rem;
+    margin-left: 5rem;
+    background-color: rgb(37, 87, 143);
     border: none;
     border-radius: 0.5rem;
+    color: white;
 }
 
-.button-b:hover {
-    background: rgba(255, 255, 34, 0.3);
-}
-
-.b2 {
-    background: rgb(214, 142, 8);
-    border: none;
-    border-radius: 0.5rem;
-}
-
-.b2:hover {
-    background: rgba(214, 142, 8, 0.3);
+.easy:hover {
+    background: rgba(37, 87, 143, 0.8);
 }
 
 footer p {
