@@ -7,12 +7,13 @@
 
 .whos-start {
     font-size: 2rem;
-    margin: 3rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-bottom: -1rem;
 }
 
 .hard {
     font-size: 2rem;
-    font-weight: 400;
     margin: 3rem;
     width: 11rem;
     height: 3.4rem;
@@ -27,6 +28,8 @@
 }
 
 .easy {
+    width: 11rem;
+    height: 3.4rem;
     font-size: 2rem;
     margin-left: 5rem;
     background-color: rgb(37, 87, 143);
@@ -43,7 +46,7 @@ footer p {
     font-size: 2rem;
     font-style: italic;
     text-align: center;
-    margin-top: 19rem;
+    margin-top: 23rem;
 }
 
 .position-game {
@@ -122,12 +125,6 @@ footer p {
     .position-game {
         width: 9rem;
         height: 9rem;
-        margin: 0;
-        padding: 0;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-size: 8rem;
     }
 
@@ -142,14 +139,29 @@ footer p {
         margin-top: 14rem;
     }
 
-    .button-b {
-        margin-left: -2.5rem;
+    .easy {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 350px){
+    .position-game {
+        width: 7.5rem;
+        height: 7.5rem;
+        font-size: 7rem;
     }
 
-    button {
-        font-size: 1.6rem;
-        margin: 3rem;
-        width: 9.5rem;
-        height: 3.4rem;
+    .div-game {
+        width: 24.2rem;
+        height: 24.2rem;
+        margin-top: 4rem;
+    }
+
+    footer p {
+        margin-top: 9rem;
+    }
+
+    .easy {
+        margin-left: 1rem;
     }
 }
