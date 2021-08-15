@@ -23,6 +23,22 @@
     color: white;
 }
 
+.very-hard {
+    font-size: 2rem;
+    margin: 3rem;
+    margin-left: 0rem;
+    width: 14rem;
+    height: 3.4rem;
+    border: none;
+    background: rgb(238, 7, 7);
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.very-hard:hover {
+    background-color: rgba(238, 7, 7, 0.7);
+}
+
 .hard:hover {
     background-color: rgba(224, 83, 48, 0.8);
 }
@@ -123,7 +139,7 @@ footer p {
 }
 
 .div-menu {
-    margin-left: 80rem;
+    margin-left: 73rem;
 }
 
 @media (max-width: 800px) {
@@ -143,13 +159,28 @@ footer p {
     footer p {
         margin-top: 14rem;
     }
-
-    .easy {
-        margin-left: 5rem;
-    }
-
     .div-menu {
         margin-left: 0rem;
+    }
+
+    .easy {
+        margin-left: 1rem;
+        width: 9rem;
+        height: 3.4rem;
+    }
+
+    .hard {
+        margin-left: 1rem;
+        width: 9rem;
+        height: 3.4rem;
+    }
+
+    .very-hard {
+        font-size: 2rem;
+        margin: 3rem;
+        margin-left: -2rem;
+        width: 13rem;
+        height: 3.4rem;
     }
 }
 
@@ -171,7 +202,20 @@ footer p {
     }
 
     .easy {
+        font-size: 1.8rem;
         margin-left: 1rem;
+        width: 7rem;
+    }
+
+    .hard {
+        font-size: 1.8rem;
+        margin-left: 1rem;
+        width: 7rem;
+    }
+
+    .very-hard {
+        font-size: 1.8rem;
+        width: 11rem;
     }
 
     .div-menu {

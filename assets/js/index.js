@@ -115,6 +115,120 @@
                         game[1][1] = 'O';
                     } else if ((game[2][0] === 'X') && (game[1][1] === 'X') && (game[0][2] === '')) {
                         game[0][2] = 'O';
+                    } else {
+                        if (move < 8) {
+                            do {
+                                l = Math.round(Math.random() * 2);
+                                c = Math.round(Math.random() * 2);
+                            } while (game[l][c] !== '');
+                            game[l][c] = 'O';
+                        } else {
+                            for (let l = 0; l < 3; l++) {
+                                for (let c = 0; c < 3; c++) {
+                                    if (game[l][c] === '') {
+                                        game[l][c] = 'O';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } else if (level === 3) {
+                    if ((game[0][0] === 'O') && (game[0][1] === 'O') && (game[0][2] === '')) {
+                        game[0][2] = 'O';
+                    } else if ((game[0][0] === 'O') && (game[0][2] === 'O') && (game[0][1] === '')) {
+                        game[0][1] = 'O';
+                    } else if ((game[0][2] === 'O') && (game[0][1] === 'O') && (game[0][0] === '')) {
+                        game[0][0] = 'O';
+                    } else if ((game[1][0] === 'O') && (game[1][1] === 'O') && (game[1][2] === '')) {
+                        game[1][2] = 'O';
+                    } else if ((game[1][0] === 'O') && (game[1][2] === 'O') && (game[1][1] === '')) {
+                        game[1][1] = 'O';
+                    } else if ((game[1][2] === 'O') && (game[1][1] === 'O') && (game[1][0] === '')) {
+                        game[1][0] = 'O';
+                    } else if ((game[2][0] === 'O') && (game[2][1] === 'O') && (game[2][2] === '')) {
+                        game[2][2] = 'O';
+                    } else if ((game[2][0] === 'O') && (game[2][2] === 'O') && (game[2][1] === '')) {
+                        game[2][1] = 'O';
+                    } else if ((game[2][2] === 'O') && (game[2][1] === 'O') && (game[2][0] === '')) {
+                        game[2][0] = 'O';
+                    } else if ((game[0][0] === 'O') && (game[1][0] === 'O') && (game[2][0] === '')) {
+                        game[2][0] = 'O';
+                    } else if ((game[0][0] === 'O') && (game[2][0] === 'O') && (game[1][0] === '')) {
+                        game[1][0] = 'O';
+                    } else if ((game[1][0] === 'O') && (game[2][0] === 'O') && (game[0][0] === '')) {
+                        game[0][0] = 'O';
+                    } else if ((game[0][1] === 'O') && (game[1][1] === 'O') && (game[2][1] === '')) {
+                        game[2][1] = 'O';
+                    } else if ((game[0][1] === 'O') && (game[2][1] === 'O') && (game[1][1] === '')) {
+                        game[1][1] = 'O';
+                    } else if ((game[1][1] === 'O') && (game[2][1] === 'O') && (game[0][1] === '')) {
+                        game[0][1] = 'O';
+                    } else if ((game[0][2] === 'O') && (game[1][2] === 'O') && (game[2][2] === '')) {
+                        game[2][2] = 'O';
+                    } else if ((game[0][2] === 'O') && (game[2][2] === 'O') && (game[1][2] === '')) {
+                        game[1][2] = 'O';
+                    } else if ((game[1][2] === 'O') && (game[2][2] === 'O') && (game[0][2] === '')) {
+                        game[0][2] = 'O';
+                    } else if ((game[0][0] === 'O') && (game[1][1] === 'O') && (game[2][2] === '')) {
+                        game[2][2] = 'O';
+                    } else if ((game[0][0] === 'O') && (game[2][2] === 'O') && (game[1][1] === '')) {
+                        game[1][1] = 'O';
+                    } else if ((game[2][2] === 'O') && (game[1][1] === 'O') && (game[0][0] === '')) {
+                        game[0][0] = 'O';
+                    } else if ((game[0][2] === 'O') && (game[1][1] === 'O') && (game[2][0] === '')) {
+                        game[2][0] = 'O';
+                    } else if ((game[0][2] === 'O') && (game[2][0] === 'O') && (game[1][1] === '')) {
+                        game[1][1] = 'O';
+                    } else if ((game[2][0] === 'O') && (game[1][1] === 'O') && (game[0][2] === '')) {
+                        game[0][2] = 'O';
+                    } else if ((game[0][0] === 'X') && (game[0][1] === 'X') && (game[0][2] === '')) {
+                        game[0][2] = 'O';
+                    } else if ((game[0][0] === 'X') && (game[0][2] === 'X') && (game[0][1] === '')) {
+                        game[0][1] = 'O';
+                    } else if ((game[0][2] === 'X') && (game[0][1] === 'X') && (game[0][0] === '')) {
+                        game[0][0] = 'O';
+                    } else if ((game[1][0] === 'X') && (game[1][1] === 'X') && (game[1][2] === '')) {
+                        game[1][2] = 'O';
+                    } else if ((game[1][0] === 'X') && (game[1][2] === 'X') && (game[1][1] === '')) {
+                        game[1][1] = 'O';
+                    } else if ((game[1][2] === 'X') && (game[1][1] === 'X') && (game[1][0] === '')) {
+                        game[1][0] = 'O';
+                    } else if ((game[2][0] === 'X') && (game[2][1] === 'X') && (game[2][2] === '')) {
+                        game[2][2] = 'O';
+                    } else if ((game[2][0] === 'X') && (game[2][2] === 'X') && (game[2][1] === '')) {
+                        game[2][1] = 'O';
+                    } else if ((game[2][2] === 'X') && (game[2][1] === 'X') && (game[2][0] === '')) {
+                        game[2][0] = 'O';
+                    } else if ((game[0][0] === 'X') && (game[1][0] === 'X') && (game[2][0] === '')) {
+                        game[2][0] = 'O';
+                    } else if ((game[0][0] === 'X') && (game[2][0] === 'X') && (game[1][0] === '')) {
+                        game[1][0] = 'O';
+                    } else if ((game[1][0] === 'X') && (game[2][0] === 'X') && (game[0][0] === '')) {
+                        game[0][0] = 'O';
+                    } else if ((game[0][1] === 'X') && (game[1][1] === 'X') && (game[2][1] === '')) {
+                        game[2][1] = 'O';
+                    } else if ((game[0][1] === 'X') && (game[2][1] === 'X') && (game[1][1] === '')) {
+                        game[1][1] = 'O';
+                    } else if ((game[1][1] === 'X') && (game[2][1] === 'X') && (game[0][1] === '')) {
+                        game[0][1] = 'O';
+                    } else if ((game[0][2] === 'X') && (game[1][2] === 'X') && (game[2][2] === '')) {
+                        game[2][2] = 'O';
+                    } else if ((game[0][2] === 'X') && (game[2][2] === 'X') && (game[1][2] === '')) {
+                        game[1][2] = 'O';
+                    } else if ((game[1][2] === 'X') && (game[2][2] === 'X') && (game[0][2] === '')) {
+                        game[0][2] = 'O';
+                    } else if ((game[0][0] === 'X') && (game[1][1] === 'X') && (game[2][2] === '')) {
+                        game[2][2] = 'O';
+                    } else if ((game[0][0] === 'X') && (game[2][2] === 'X') && (game[1][1] === '')) {
+                        game[1][1] = 'O';
+                    } else if ((game[2][2] === 'X') && (game[1][1] === 'X') && (game[0][0] === '')) {
+                        game[0][0] = 'O';
+                    } else if ((game[0][2] === 'X') && (game[1][1] === 'X') && (game[2][0] === '')) {
+                        game[2][0] = 'O';
+                    } else if ((game[0][2] === 'X') && (game[2][0] === 'X') && (game[1][1] === '')) {
+                        game[1][1] = 'O';
+                    } else if ((game[2][0] === 'X') && (game[1][1] === 'X') && (game[0][2] === '')) {
+                        game[0][2] = 'O';
                     } else if ((game[0][0] === 'X') && (game[0][1] === '') && (game[0][2] === '') && (game[1][0] === '') && (game[1][1] === '') && (game[1][2] === '') && (game[2][0] === '') && (game[2][1] === '') && (game[2][2] === '')) {
                         game[1][1] = 'O';
                     } else if ((game[0][1] === 'X') && (game[0][0] === '') && (game[0][2] === '') && (game[1][0] === '') && (game[1][1] === '') && (game[1][2] === '') && (game[2][0] === '') && (game[2][1] === '') && (game[2][2] === '')) {
@@ -162,29 +276,23 @@
 
         function verifyVictory() {
             let l, c;
-
             for (l = 0; l < 3; l++) {
                 if ((game[l][0] === game[l][1]) && (game[l][1] === game[l][2])) {
                     return game[l][0];
                 }
             }
-
             for (c = 0; c < 3; c++) {
                 if ((game[0][c] === game[1][c]) && (game[1][c] === game[2][c])) {
                     return game[0][c];
                 }
             }
-
             if ((game[0][0] === game[1][1]) && (game[1][1] === game[2][2])) {
                 return game[0][0];
             }
-
             if ((game[0][2] === game[1][1]) && (game[1][1] === game[2][0])) {
                 return game[0][2];
             }
-
             return '';
-
         }
 
         function play(position) {
@@ -293,11 +401,11 @@
             if (whosStart === 1) {
                 whosStart = 0;
                 whosPlay = whosStart;
-                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jogador';
+                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp; Jogador';
             } else {
                 whosStart = 1;
                 whosPlay = whosStart;
-                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CPU';
+                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp; CPU';
                 cpuPlay();
             }
         }
@@ -319,11 +427,37 @@
             if (whosStart === 1) {
                 whosStart = 0;
                 whosPlay = whosStart;
-                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jogador';
+                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp; Jogador';
             } else {
                 whosStart = 1;
                 whosPlay = whosStart;
-                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CPU';
+                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp; CPU';
+                cpuPlay();
+            }
+        }
+
+        function veryHard() {
+            level = 3;
+            playing = true;
+            moveCpu = 1;
+            move = 0;
+            game = [['', '', ''], ['', '', ''], ['', '', '']];
+            board = [
+                [document.querySelector('#p1'), document.querySelector('#p2'), document.querySelector('#p3')],
+                [document.querySelector('#p4'), document.querySelector('#p5'), document.querySelector('#p6')],
+                [document.querySelector('#p7'), document.querySelector('#p8'), document.querySelector('#p9')]
+            ];
+
+            updateBoard();
+
+            if (whosStart === 1) {
+                whosStart = 0;
+                whosPlay = whosStart;
+                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp; Jogador';
+            } else {
+                whosStart = 1;
+                whosPlay = whosStart;
+                document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp; CPU';
                 cpuPlay();
             }
         }
