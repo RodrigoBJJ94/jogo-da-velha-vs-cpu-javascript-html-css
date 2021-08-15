@@ -121,6 +121,11 @@ footer p {
     border-top: 0.1rem solid black;
     border-left: 0.1rem solid black;
 }
+
+.div-menu {
+    margin-left: 80rem;
+}
+
 @media (max-width: 800px) {
     .position-game {
         width: 9rem;
@@ -141,6 +146,10 @@ footer p {
 
     .easy {
         margin-left: 5rem;
+    }
+
+    .div-menu {
+        margin-left: 0rem;
     }
 }
 
@@ -163,5 +172,9 @@ footer p {
 
     .easy {
         margin-left: 1rem;
+    }
+
+    .div-menu {
+        margin-left: 0rem;
     }
 }

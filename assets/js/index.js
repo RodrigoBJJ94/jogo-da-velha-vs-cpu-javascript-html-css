@@ -1,7 +1,7 @@
 
         let game = [];
         let board = [];
-        let whosPlay = 0; // = 0 Jogador, = 1 CPU
+        let whosPlay = 0;
         let verify;
         let playing = true;
         let level = 2;
