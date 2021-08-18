@@ -367,7 +367,7 @@ function play(position) {
             if (verify !== '') {
                 swal(verify + ' venceu!');
                 pointsPlayer++;
-                document.querySelector('.points-player').innerHTML = (`Pontos jogador: ${pointsPlayer}`);
+                document.querySelector('.points-player').innerHTML = (`Pontos Jogador: ${pointsPlayer}`);
                 playing = false;
             }
             move++;
