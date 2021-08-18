@@ -7,6 +7,8 @@ let level = 2;
 let moveCpu = 1;
 let whosStart = 1;
 let move = 0;
+let pointsCpu = 0;
+let pointsPlayer = 0;
 
 function cpuPlay() {
     if (playing) {
@@ -269,6 +271,8 @@ function cpuPlay() {
         verify = verifyVictory();
         if (verify !== '') {
             swal(verify + ' venceu!');
+            pointsCpu++;
+            document.querySelector('.points-cpu').innerHTML = (`Pontos CPU: ${pointsCpu}`)
             playing = false;
         }
         updateBoard();
@@ -362,6 +366,8 @@ function play(position) {
             verify = verifyVictory();
             if (verify !== '') {
                 swal(verify + ' venceu!');
+                pointsPlayer++;
+                document.querySelector('.points-player').innerHTML = (`Pontos jogador: ${pointsPlayer}`);
                 playing = false;
             }
             move++;

@@ -8,7 +8,7 @@
 .whos-start {
     font-size: 2rem;
     margin-top: 3rem;
-    margin-left: 3rem;
+    margin-left: 0rem;
     margin-bottom: -1rem;
 }
 
@@ -62,7 +62,7 @@ footer p {
     font-size: 2rem;
     font-style: italic;
     text-align: center;
-    margin-top: 23rem;
+    margin-top: 15rem;
 }
 
 .position-game {
@@ -146,6 +146,21 @@ footer p {
     font-size: 3rem;
 }
 
+.points {
+    font-size: 3rem;
+    margin-left: 73rem;
+    margin-top: 2rem;
+}
+
+.points-cpu {
+    margin-top: 1rem;
+    color: red;
+}
+
+.points-player {
+    color: rgb(124, 209, 249);
+}
+
 @media (max-width: 800px) {
     .position-game {
         width: 9rem;
@@ -161,7 +176,7 @@ footer p {
     }
 
     footer p {
-        margin-top: 14rem;
+        margin-top: 7rem;
     }
     .div-menu {
         margin-left: 0rem;
@@ -186,6 +201,20 @@ footer p {
         width: 13rem;
         height: 3.4rem;
     }
+
+    .whos-start {
+        margin-left: 3rem;
+    }
+
+    .points {
+        font-size: 3rem;
+        margin-left: 3rem;
+        margin-top: 1rem;
+    }
+    
+    .points-cpu {
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 350px){
@@ -199,10 +228,11 @@ footer p {
         width: 24.2rem;
         height: 24.2rem;
         margin-top: 4rem;
+        margin-left: 3.5rem;
     }
 
     footer p {
-        margin-top: 9rem;
+        margin-top: 5rem;
     }
 
     .easy {
@@ -224,5 +254,15 @@ footer p {
 
     .div-menu {
         margin-left: 0rem;
+    }
+
+    .points {
+        font-size: 2.5rem;
+        margin-left: 3rem;
+        margin-top: 1rem;
+    }
+
+    .points-cpu {
+        margin-top: 0.5rem;
     }
 }
