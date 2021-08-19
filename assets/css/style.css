@@ -68,14 +68,6 @@ body {
     background: rgba(124, 209, 249, 0.8);
 }
 
-footer p {
-    font-size: 2rem;
-    font-style: italic;
-    text-align: center;
-    margin-top: 15rem;
-    color: white;
-}
-
 .position-game {
     width: 15rem;
     height: 15rem;
@@ -187,9 +179,6 @@ footer p {
         margin-top: 7rem;
     }
 
-    footer p {
-        margin-top: 7rem;
-    }
     .div-menu {
         margin-left: 0rem;
     }
@@ -241,10 +230,6 @@ footer p {
         height: 24.2rem;
         margin-top: 4rem;
         margin-left: 3.5rem;
-    }
-
-    footer p {
-        margin-top: 5rem;
     }
 
     .easy {
