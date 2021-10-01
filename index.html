@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo da Velha - Versus CPU</title>
+    <title>Tic Tac Toe - Versus CPU</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
     <div class="div-menu">
-        <h2 class="whos-start">Quem joga: </h2>
-        <button class="easy" onclick="easy()">Fácil</button>
-        <button class="hard" onclick="start()">Difícil</button>
-        <button class="very-hard" onclick="veryHard()">Muito difícil</button>
+        <h2 class="whos-start">Who is play: </h2>
+        <button class="easy" onclick="easy()">Easy</button>
+        <button class="hard" onclick="start()">Hard</button>
+        <button class="very-hard" onclick="veryHard()">Very Hard</button>
     </div>
         <div class="div-game">
             <div id="p1" class="position-game" onclick="play(1)"></div>
@@ -28,8 +28,8 @@
             <div id="p9" class="position-game" onclick="play(9)"></div>
         </div>
         <div class="points">
-            <p class="points-player">Pontos Jogador:</p>
-            <p class="points-cpu">Pontos CPU:</p>
+            <p class="points-player">Points Player:</p>
+            <p class="points-cpu">Points CPU:</p>
         </div>
     <script src="/assets/js/index.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

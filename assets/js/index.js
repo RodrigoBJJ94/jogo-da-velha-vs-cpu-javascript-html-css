@@ -270,9 +270,9 @@ function cpuPlay() {
         }
         verify = verifyVictory();
         if (verify !== '') {
-            swal(verify + ' venceu!');
+            swal(verify + ' Win!');
             pointsCpu++;
-            document.querySelector('.points-cpu').innerHTML = (`Pontos CPU: ${pointsCpu}`)
+            document.querySelector('.points-cpu').innerHTML = (`Points CPU: ${pointsCpu}`)
             playing = false;
         }
         updateBoard();
@@ -367,7 +367,7 @@ function play(position) {
             if (verify !== '') {
                 swal(verify + ' venceu!');
                 pointsPlayer++;
-                document.querySelector('.points-player').innerHTML = (`Pontos Jogador: ${pointsPlayer}`);
+                document.querySelector('.points-player').innerHTML = (`Points Player: ${pointsPlayer}`);
                 playing = false;
             }
             move++;
@@ -410,11 +410,11 @@ function start() {
     if (whosStart === 1) {
         whosStart = 0;
         whosPlay = whosStart;
-        document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp; Jogador';
+        document.querySelector('.whos-start').innerHTML = 'Who Plays: &nbsp;&nbsp; Player';
     } else {
         whosStart = 1;
         whosPlay = whosStart;
-        document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp; CPU';
+        document.querySelector('.whos-start').innerHTML = 'Who Plays: &nbsp;&nbsp; CPU';
         cpuPlay();
     }
 }
@@ -436,11 +436,11 @@ function easy() {
     if (whosStart === 1) {
         whosStart = 0;
         whosPlay = whosStart;
-        document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp; Jogador';
+        document.querySelector('.whos-start').innerHTML = 'Who Plays: &nbsp;&nbsp; Player';
     } else {
         whosStart = 1;
         whosPlay = whosStart;
-        document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp; CPU';
+        document.querySelector('.whos-start').innerHTML = 'Who Plays: &nbsp;&nbsp; CPU';
         cpuPlay();
     }
 }
@@ -462,11 +462,11 @@ function veryHard() {
     if (whosStart === 1) {
         whosStart = 0;
         whosPlay = whosStart;
-        document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp; Jogador';
+        document.querySelector('.whos-start').innerHTML = 'Who Plays: &nbsp;&nbsp; Player';
     } else {
         whosStart = 1;
         whosPlay = whosStart;
-        document.querySelector('.whos-start').innerHTML = 'Quem começa: &nbsp;&nbsp; CPU';
+        document.querySelector('.whos-start').innerHTML = 'Who Plays: &nbsp;&nbsp; CPU';
         cpuPlay();
     }
 }
